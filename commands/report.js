@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Timpul", message.createdAt)
     .addField("Motivul", reason);
 
-    let reportschannel  = message.guild.channels.find(`name`, "reports");
+    let reportschannel  = message.guild.channels.find(`name`, "👑-reports");
     if(!reportschannel) return message.channel.send("Nu pot gasi canalul de reporturi");
 
 
